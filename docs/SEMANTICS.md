@@ -4,7 +4,7 @@ Time is an integer count of experiment minutes, not a dated Australian roster or
 
 ## Cohort and service
 
-Every generated request arrives in `[0, horizon)` and has a positive, pre-generated service duration. IDs are sequence integers, not patient identifiers. A request is queued once and served at most once. Service is non-preemptive: a request starts only if its entire duration fits within a single resource window. No service overrun is permitted. A long head request can leave capacity idle; a shorter later request cannot bypass it.
+Every generated request arrives in `[0, horizon)` and has a positive, pre-generated service duration. IDs are sequence integers, not patient identifiers. A request is queued once and served at most once. Service duration is known to the simulator in advance for window-fit decisions; real duration uncertainty is not modelled. Service is non-preemptive: a request starts only if its entire duration fits within a single resource window. No service overrun is permitted. A long head request can leave capacity idle; a shorter later request cannot bypass it.
 
 At each event minute, completions are applied first, then openings, then all arrivals. Simultaneous arrivals are ordered by request ID. Dispatch takes the FIFO head and the lowest-numbered free resource whose current window can fit it, then repeats. A previously skipped idle resource is reconsidered for the next head. No new service starts at the observation horizon; completion exactly at the horizon is counted as completed.
 
@@ -32,3 +32,9 @@ Empty cohorts have null means. Completed-only means can improve while the backlo
 The Python engine accepts up to 5,000 generated requests, four resources, 56 windows per resource and a 28-day observation horizon. Adjacent windows must be merged explicitly; overlapping or unordered windows are refused. A window may extend at most one day past the observation horizon, supporting explicit in-service censoring cases. The CLI only generates predefined synthetic workloads and does not import files or personal data.
 
 JSON outputs are capped at 2 MiB before exclusive creation. Trace-heavy large workloads can be refused instead of truncated. New POSIX files use mode 0600 and existing paths, including symlinks, are not overwritten. Parent directories must be trusted; physical write failure can leave an incomplete output. Windows ACLs remain the user's responsibility.
+
+## Paired experiment inference
+
+Experiments use 2–100 distinct workload seeds sampled without replacement from the 32-bit seed range. Each seed generates one cohort reused unchanged for both calendars. The budget is capped at 50,000 generated requests across replications, before allocation. Reported differences are late capacity minus early capacity. The primary metric is restricted waiting exposure across all arrivals. Completed-only conditional means remain in raw policy metrics and are not treated as the same completed cohort.
+
+Approximate 95% intervals resample the paired replication differences 1,000 times with a separate deterministic random stream, then use interpolated 2.5th and 97.5th percentiles. They concern Monte Carlo uncertainty within the fixed artificial scenario, not confidence in a real clinical or government effect. Small replication counts can give unstable intervals. All seeds, pair hashes and raw differences are retained.

@@ -24,8 +24,31 @@ jobs:
           python -m unittest discover -s tests -v
           care-queue --version
           mkdir artifacts
-          care-queue --scenario late_burst --seed 17 --days 5 --requests 200 --trace --out artifacts/queue.json
+          care-queue simulate --scenario late_burst --seed 17 --days 5 --requests 200 --trace --out artifacts/queue.json
+      - name: Paired experiment, exports and bounded benchmark
+        if: matrix.python == '3.12'
+        run: |
+          set -euo pipefail
+          care-queue experiment --scenario late_burst --seed 42 --replications 20 --out artifacts/experiment.json
+          care-queue experiment --scenario late_burst --seed 42 --replications 20 --format html --out artifacts/report.html
+          care-queue experiment --scenario late_burst --seed 42 --replications 20 --format csv --out artifacts/experiment.csv
+          care-queue benchmark --repeats 3 --out artifacts/benchmark.json
+      - name: Prepare inert rendering probe
+        if: matrix.python == '3.12'
+        run: python browser/probe.py
+      - uses: actions/setup-node@v4
+        if: matrix.python == '3.12'
+        with:
+          node-version: '24'
+      - name: Inspect static report in Chromium
+        if: matrix.python == '3.12'
+        run: |
+          set -euo pipefail
+          npm ci --prefix browser --ignore-scripts
+          npm exec --prefix browser -- playwright install --with-deps chromium
+          npm test --prefix browser
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: queue-${{ matrix.python }}
           path: artifacts/

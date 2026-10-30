@@ -12,7 +12,7 @@ class CliTests(unittest.TestCase):
     def test_installed_cli_generates_synthetic_case_and_refuses_overwrite(self):
         with tempfile.TemporaryDirectory() as d:
             out=Path(d)/'result.json'
-            args=[sys.executable,'-m','care_queue.cli','--scenario','late_burst','--seed','17','--days','2','--requests','30','--trace','--out',str(out)]
+            args=[sys.executable,'-m','care_queue.cli','simulate','--scenario','late_burst','--seed','17','--days','2','--requests','30','--trace','--out',str(out)]
             run=subprocess.run(args,capture_output=True,text=True,timeout=10)
             self.assertEqual(run.returncode,0,run.stdout+run.stderr)
             data=json.loads(out.read_text())
@@ -27,7 +27,7 @@ class CliTests(unittest.TestCase):
     def test_caps_and_symlink_outputs_without_file_creation(self):
         with tempfile.TemporaryDirectory() as d:
             out=Path(d)/'result'
-            run=subprocess.run([sys.executable,'-m','care_queue.cli','--requests','5001','--out',str(out)],capture_output=True)
+            run=subprocess.run([sys.executable,'-m','care_queue.cli','simulate','--requests','5001','--out',str(out)],capture_output=True)
             self.assertEqual(run.returncode,2);self.assertFalse(out.exists())
             target=Path(d)/'keep';target.write_text('keep')
             out.symlink_to(target)
