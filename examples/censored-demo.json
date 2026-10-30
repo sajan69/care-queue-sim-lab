@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "horizon_minutes": 10,
+  "cohort_sha256": "1d6bdd900790525b8f968aee1ea24012754f37f28e88714073475fbe7324473e",
+  "calendar_sha256": "a211148a7031ff8662fc674a7ad18cbf23b72f9c2aff0b32739ae1857241bdba",
+  "metrics": {
+    "arrived": 3,
+    "completed": 1,
+    "in_service": 1,
+    "waiting": 1,
+    "started": 2,
+    "completed_wait_mean": 0.0,
+    "completed_wait_n": 1,
+    "started_wait_mean": 2.5,
+    "started_wait_n": 2,
+    "waiting_age_mean": 8.0,
+    "waiting_age_n": 1,
+    "unfinished_age_mean": 8.5,
+    "unfinished_n": 2,
+    "restricted_wait_total": 13,
+    "restricted_wait_mean": 4.333333333333333,
+    "restricted_wait_n": 3,
+    "queue_area_minutes": 13,
+    "busy_server_minutes": 10,
+    "available_server_minutes": 10,
+    "utilization": 1.0,
+    "unused_server_minutes": 0,
+    "max_waiting_at_event": 2,
+    "events_processed": 5
+  },
+  "jobs": [
+    {
+      "id": 1,
+      "arrival": 0,
+      "duration": 6,
+      "start": 0,
+      "scheduled_completion": 6,
+      "server": 0,
+      "status": "completed",
+      "restricted_wait_minutes": 0,
+      "wait_right_censored": false,
+      "unfinished_age_minutes": null
+    },
+    {
+      "id": 2,
+      "arrival": 1,
+      "duration": 6,
+      "start": 6,
+      "scheduled_completion": 12,
+      "server": 0,
+      "status": "in_service",
+      "restricted_wait_minutes": 5,
+      "wait_right_censored": false,
+      "unfinished_age_minutes": 9
+    },
+    {
+      "id": 3,
+      "arrival": 2,
+      "duration": 2,
+      "start": null,
+      "scheduled_completion": null,
+      "server": null,
+      "status": "waiting",
+      "restricted_wait_minutes": 8,
+      "wait_right_censored": true,
+      "unfinished_age_minutes": 8
+    }
+  ],
+  "trace": [
+    {
+      "minute": 0,
+      "arrived": 1,
+      "completed": 0,
+      "waiting": 0,
+      "in_service": 1
+    },
+    {
+      "minute": 1,
+      "arrived": 2,
+      "completed": 0,
+      "waiting": 1,
+      "in_service": 1
+    },
+    {
+      "minute": 2,
+      "arrived": 3,
+      "completed": 0,
+      "waiting": 2,
+      "in_service": 1
+    },
+    {
+      "minute": 6,
+      "arrived": 3,
+      "completed": 1,
+      "waiting": 1,
+      "in_service": 1
+    },
+    {
+      "minute": 10,
+      "arrived": 3,
+      "completed": 1,
+      "waiting": 1,
+      "in_service": 1
+    }
+  ]
+}

@@ -1,0 +1,2778 @@
+{
+  "source_commit": "d9f3bcc0e9a03233e3a7e58572fc701412ae12fa",
+  "execution": "Local installed wheel, not editable install",
+  "experiments": [
+    {
+      "schema_version": 1,
+      "synthetic": true,
+      "completed": true,
+      "created_at": "2026-10-30T19:12:05.258716+00:00",
+      "configuration": {
+        "scenario": "uniform",
+        "master_seed": 42,
+        "days": 5,
+        "requests_per_replication": 200,
+        "servers": 2,
+        "replications": 20
+      },
+      "policy_order": [
+        "early_capacity",
+        "late_capacity"
+      ],
+      "difference_direction": "late_capacity minus early_capacity",
+      "workload_sha256": "b1ebab2ac805164a2dc6f4e61bf3def155259ecc1f116dc0f1a53225e42a4454",
+      "summaries": {
+        "restricted_wait_mean": {
+          "pairs": 20,
+          "mean_difference": -11.259749999999997,
+          "replication_difference_sd": 85.6175904742619,
+          "bootstrap_95_percentile": [
+            -45.830774999999974,
+            25.42656875
+          ],
+          "bootstrap_draws": 1000
+        },
+        "waiting": {
+          "pairs": 20,
+          "mean_difference": -2.75,
+          "replication_difference_sd": 2.971354466976475,
+          "bootstrap_95_percentile": [
+            -4.05125,
+            -1.4
+          ],
+          "bootstrap_draws": 1000
+        },
+        "completed": {
+          "pairs": 20,
+          "mean_difference": 2.75,
+          "replication_difference_sd": 2.971354466976475,
+          "bootstrap_95_percentile": [
+            1.4,
+            4.051249999999999
+          ],
+          "bootstrap_draws": 1000
+        },
+        "busy_server_minutes": {
+          "pairs": 20,
+          "mean_difference": 99.4,
+          "replication_difference_sd": 96.47492174817137,
+          "bootstrap_95_percentile": [
+            54.99375,
+            141.80375
+          ],
+          "bootstrap_draws": 1000
+        }
+      },
+      "pairs": [
+        {
+          "seed": 2746317213,
+          "cohort_sha256": "317e716b52b1ec7b41a1dc1fd9b80a3627ddaec6b2a067692b6f0a72dd622cb4",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4318,
+                "restricted_wait_mean": 1582.545,
+                "restricted_wait_total": 316509,
+                "completed_wait_mean": 1671.5669291338584,
+                "completed_wait_n": 127
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4318,
+                "restricted_wait_mean": 1671.95,
+                "restricted_wait_total": 334390,
+                "completed_wait_mean": 1812.3622047244094,
+                "completed_wait_n": 127
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 89.40499999999997,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 1181241943,
+          "cohort_sha256": "016e142c894bb586c4fbfe25016cf82fdcf60939372056649ab5bfd082e0fcdd",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 122,
+                "in_service": 0,
+                "waiting": 78,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3983,
+                "restricted_wait_mean": 1375.645,
+                "restricted_wait_total": 275129,
+                "completed_wait_mean": 1440.639344262295,
+                "completed_wait_n": 122
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 129,
+                "in_service": 0,
+                "waiting": 71,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4250,
+                "restricted_wait_mean": 1186.32,
+                "restricted_wait_total": 237264,
+                "completed_wait_mean": 1191.906976744186,
+                "completed_wait_n": 129
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -189.32500000000005,
+            "waiting": -7,
+            "completed": 7,
+            "busy_server_minutes": 267
+          }
+        },
+        {
+          "seed": 958682846,
+          "cohort_sha256": "fd467e07219cd80b721fb7f94f74464a239c8caf40349046ce7c00cd0930abbf",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4185,
+                "restricted_wait_mean": 1331.225,
+                "restricted_wait_total": 266245,
+                "completed_wait_mean": 1264.812030075188,
+                "completed_wait_n": 133
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 141,
+                "in_service": 0,
+                "waiting": 59,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4422,
+                "restricted_wait_mean": 1208.73,
+                "restricted_wait_total": 241746,
+                "completed_wait_mean": 1150.5248226950355,
+                "completed_wait_n": 141
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -122.49499999999989,
+            "waiting": -8,
+            "completed": 8,
+            "busy_server_minutes": 237
+          }
+        },
+        {
+          "seed": 3163119785,
+          "cohort_sha256": "9a316060f27dd223dfd8834e4e185be2e5fdcab3f20d66ef75e98ec3aeedf077",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 139,
+                "in_service": 0,
+                "waiting": 61,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4408,
+                "restricted_wait_mean": 1076.155,
+                "restricted_wait_total": 215231,
+                "completed_wait_mean": 1026.6618705035971,
+                "completed_wait_n": 139
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 141,
+                "in_service": 0,
+                "waiting": 59,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4485,
+                "restricted_wait_mean": 1141.115,
+                "restricted_wait_total": 228223,
+                "completed_wait_mean": 1134.0354609929077,
+                "completed_wait_n": 141
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 64.96000000000004,
+            "waiting": -2,
+            "completed": 2,
+            "busy_server_minutes": 77
+          }
+        },
+        {
+          "seed": 1812140441,
+          "cohort_sha256": "ae1261335b8232259f94efabeb5f77de5b367e04cce4961894b97d93025897c5",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 136,
+                "in_service": 0,
+                "waiting": 64,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4358,
+                "restricted_wait_mean": 1181.545,
+                "restricted_wait_total": 236309,
+                "completed_wait_mean": 1221.4779411764705,
+                "completed_wait_n": 136
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 138,
+                "in_service": 0,
+                "waiting": 62,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4452,
+                "restricted_wait_mean": 1171.23,
+                "restricted_wait_total": 234246,
+                "completed_wait_mean": 1219.427536231884,
+                "completed_wait_n": 138
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -10.315000000000055,
+            "waiting": -2,
+            "completed": 2,
+            "busy_server_minutes": 94
+          }
+        },
+        {
+          "seed": 127978094,
+          "cohort_sha256": "825c7fec695efd976964c729de2ea751e11e07868c92c37d025a6fd5e495bb2b",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 129,
+                "in_service": 0,
+                "waiting": 71,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4178,
+                "restricted_wait_mean": 1313.59,
+                "restricted_wait_total": 262718,
+                "completed_wait_mean": 1336.7596899224807,
+                "completed_wait_n": 129
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 131,
+                "in_service": 0,
+                "waiting": 69,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4250,
+                "restricted_wait_mean": 1340.835,
+                "restricted_wait_total": 268167,
+                "completed_wait_mean": 1394.0,
+                "completed_wait_n": 131
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 27.24500000000012,
+            "waiting": -2,
+            "completed": 2,
+            "busy_server_minutes": 72
+          }
+        },
+        {
+          "seed": 939042955,
+          "cohort_sha256": "8b9f67f2ed5c5511a494000b8141c2f405d27ffca5dd9bd811a993d64ca72760",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 134,
+                "in_service": 0,
+                "waiting": 66,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4244,
+                "restricted_wait_mean": 1023.975,
+                "restricted_wait_total": 204795,
+                "completed_wait_mean": 981.8880597014926,
+                "completed_wait_n": 134
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 134,
+                "in_service": 0,
+                "waiting": 66,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4244,
+                "restricted_wait_mean": 1006.61,
+                "restricted_wait_total": 201322,
+                "completed_wait_mean": 955.9701492537314,
+                "completed_wait_n": 134
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -17.36500000000001,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 2340505846,
+          "cohort_sha256": "0503aaaece5cd8d871766fdb9f4aec6249138a6dc3e20d7b26a03a28248796c2",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 129,
+                "in_service": 0,
+                "waiting": 71,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4015,
+                "restricted_wait_mean": 1441.915,
+                "restricted_wait_total": 288383,
+                "completed_wait_mean": 1493.5426356589148,
+                "completed_wait_n": 129
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 135,
+                "in_service": 0,
+                "waiting": 65,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4250,
+                "restricted_wait_mean": 1347.315,
+                "restricted_wait_total": 269463,
+                "completed_wait_mean": 1389.7111111111112,
+                "completed_wait_n": 135
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -94.59999999999991,
+            "waiting": -6,
+            "completed": 6,
+            "busy_server_minutes": 235
+          }
+        },
+        {
+          "seed": 946785248,
+          "cohort_sha256": "570643b56d8bb59d005da9532a7b6e26759e0dbae3acd6c1fd99260b3ccfbb9f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 122,
+                "in_service": 0,
+                "waiting": 78,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4124,
+                "restricted_wait_mean": 1317.115,
+                "restricted_wait_total": 263423,
+                "completed_wait_mean": 1251.049180327869,
+                "completed_wait_n": 122
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 125,
+                "in_service": 0,
+                "waiting": 75,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4231,
+                "restricted_wait_mean": 1237.655,
+                "restricted_wait_total": 247531,
+                "completed_wait_mean": 1148.608,
+                "completed_wait_n": 125
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -79.46000000000004,
+            "waiting": -3,
+            "completed": 3,
+            "busy_server_minutes": 107
+          }
+        },
+        {
+          "seed": 2530876844,
+          "cohort_sha256": "1ac8a2d86d8d4c7eff26cb452afc7aa1e02cbeff9d6f8a856bfa055a4b9c6ea2",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 138,
+                "in_service": 0,
+                "waiting": 62,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4224,
+                "restricted_wait_mean": 1123.855,
+                "restricted_wait_total": 224771,
+                "completed_wait_mean": 1119.7391304347825,
+                "completed_wait_n": 138
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 143,
+                "in_service": 0,
+                "waiting": 57,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4378,
+                "restricted_wait_mean": 1129.695,
+                "restricted_wait_total": 225939,
+                "completed_wait_mean": 1160.2797202797203,
+                "completed_wait_n": 143
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 5.839999999999918,
+            "waiting": -5,
+            "completed": 5,
+            "busy_server_minutes": 154
+          }
+        },
+        {
+          "seed": 3460967357,
+          "cohort_sha256": "1426dc3a11d86969032e3d798220906fa023cf49834b9065449f71ec18041c4b",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4196,
+                "restricted_wait_mean": 1256.515,
+                "restricted_wait_total": 251303,
+                "completed_wait_mean": 1281.6062992125985,
+                "completed_wait_n": 127
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4196,
+                "restricted_wait_mean": 1324.16,
+                "restricted_wait_total": 264832,
+                "completed_wait_mean": 1388.1338582677165,
+                "completed_wait_n": 127
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 67.64499999999998,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 2998485882,
+          "cohort_sha256": "6ece68e542e8b2d76d00cad98bdb9ed7f0e52668839426f6bd7567243e6ae764",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 131,
+                "in_service": 0,
+                "waiting": 69,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4179,
+                "restricted_wait_mean": 1167.985,
+                "restricted_wait_total": 233597,
+                "completed_wait_mean": 1205.1526717557251,
+                "completed_wait_n": 131
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4213,
+                "restricted_wait_mean": 1193.285,
+                "restricted_wait_total": 238657,
+                "completed_wait_mean": 1256.9323308270677,
+                "completed_wait_n": 133
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 25.300000000000182,
+            "waiting": -2,
+            "completed": 2,
+            "busy_server_minutes": 34
+          }
+        },
+        {
+          "seed": 1461364854,
+          "cohort_sha256": "a4548becc75699bb8d047dd582a158c24fce279b60c19bbf312776888663b496",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 128,
+                "in_service": 0,
+                "waiting": 72,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4152,
+                "restricted_wait_mean": 1146.52,
+                "restricted_wait_total": 229304,
+                "completed_wait_mean": 1228.3984375,
+                "completed_wait_n": 128
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 128,
+                "in_service": 0,
+                "waiting": 72,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4152,
+                "restricted_wait_mean": 1177.62,
+                "restricted_wait_total": 235524,
+                "completed_wait_mean": 1276.9921875,
+                "completed_wait_n": 128
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 31.09999999999991,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 667779376,
+          "cohort_sha256": "cbada8ac3296c23779472b1b1a7dde136d4c981e45f46ffed9b2e3afbc75ea0f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 125,
+                "in_service": 0,
+                "waiting": 75,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4082,
+                "restricted_wait_mean": 1329.835,
+                "restricted_wait_total": 265967,
+                "completed_wait_mean": 1381.976,
+                "completed_wait_n": 125
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 129,
+                "in_service": 0,
+                "waiting": 71,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4288,
+                "restricted_wait_mean": 1234.94,
+                "restricted_wait_total": 246988,
+                "completed_wait_mean": 1261.5658914728683,
+                "completed_wait_n": 129
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -94.89499999999998,
+            "waiting": -4,
+            "completed": 4,
+            "busy_server_minutes": 206
+          }
+        },
+        {
+          "seed": 1445662585,
+          "cohort_sha256": "dd0d68d87e067d3788b8c0c786e4c8e9782b8bf18a83a3ce90b8f727b4a7c66b",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 137,
+                "in_service": 0,
+                "waiting": 63,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4304,
+                "restricted_wait_mean": 979.335,
+                "restricted_wait_total": 195867,
+                "completed_wait_mean": 989.4890510948906,
+                "completed_wait_n": 137
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 140,
+                "in_service": 0,
+                "waiting": 60,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4399,
+                "restricted_wait_mean": 1038.21,
+                "restricted_wait_total": 207642,
+                "completed_wait_mean": 1096.2571428571428,
+                "completed_wait_n": 140
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 58.875,
+            "waiting": -3,
+            "completed": 3,
+            "busy_server_minutes": 95
+          }
+        },
+        {
+          "seed": 398340369,
+          "cohort_sha256": "22f8f00a7a0dc19a6ff35049ddef8b9efc37a7e218533a28fb934cd00fd752c8",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 129,
+                "in_service": 0,
+                "waiting": 71,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4164,
+                "restricted_wait_mean": 1068.45,
+                "restricted_wait_total": 213690,
+                "completed_wait_mean": 1067.4341085271317,
+                "completed_wait_n": 129
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 136,
+                "in_service": 0,
+                "waiting": 64,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4308,
+                "restricted_wait_mean": 1102.425,
+                "restricted_wait_total": 220485,
+                "completed_wait_mean": 1167.0955882352941,
+                "completed_wait_n": 136
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 33.97499999999991,
+            "waiting": -7,
+            "completed": 7,
+            "busy_server_minutes": 144
+          }
+        },
+        {
+          "seed": 415393687,
+          "cohort_sha256": "93134795c0ad1a5ffbec8c40b0d3c1c59852a5e34504113c2399f00e4d50c59e",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4161,
+                "restricted_wait_mean": 1404.24,
+                "restricted_wait_total": 280848,
+                "completed_wait_mean": 1442.2105263157894,
+                "completed_wait_n": 133
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 134,
+                "in_service": 0,
+                "waiting": 66,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4196,
+                "restricted_wait_mean": 1361.93,
+                "restricted_wait_total": 272386,
+                "completed_wait_mean": 1385.4776119402984,
+                "completed_wait_n": 134
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -42.309999999999945,
+            "waiting": -1,
+            "completed": 1,
+            "busy_server_minutes": 35
+          }
+        },
+        {
+          "seed": 3639960595,
+          "cohort_sha256": "60b687ae3c37c4c4a50a9107918a5b3d39bf9e7d1a3ed43d8107b99308bb145d",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 131,
+                "in_service": 0,
+                "waiting": 69,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4215,
+                "restricted_wait_mean": 1393.97,
+                "restricted_wait_total": 278794,
+                "completed_wait_mean": 1489.969465648855,
+                "completed_wait_n": 131
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4281,
+                "restricted_wait_mean": 1442.81,
+                "restricted_wait_total": 288562,
+                "completed_wait_mean": 1576.5112781954888,
+                "completed_wait_n": 133
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 48.83999999999992,
+            "waiting": -2,
+            "completed": 2,
+            "busy_server_minutes": 66
+          }
+        },
+        {
+          "seed": 2592983555,
+          "cohort_sha256": "a51d3f39b86c8b97884dd63b090b658571e9280bd1816d096346546f39839e48",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4335,
+                "restricted_wait_mean": 1313.97,
+                "restricted_wait_total": 262794,
+                "completed_wait_mean": 1393.1889763779527,
+                "completed_wait_n": 127
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 123,
+                "in_service": 0,
+                "waiting": 77,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4269,
+                "restricted_wait_mean": 1437.89,
+                "restricted_wait_total": 287578,
+                "completed_wait_mean": 1565.4471544715448,
+                "completed_wait_n": 123
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 123.92000000000007,
+            "waiting": 4,
+            "completed": -4,
+            "busy_server_minutes": -66
+          }
+        },
+        {
+          "seed": 3466589567,
+          "cohort_sha256": "ea7f12dfbbb5b3d2cfd6e1ff254acc0d9082b44115ddfed426ca90000c98ab95",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 122,
+                "in_service": 0,
+                "waiting": 78,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3984,
+                "restricted_wait_mean": 1391.855,
+                "restricted_wait_total": 278371,
+                "completed_wait_mean": 1504.844262295082,
+                "completed_wait_n": 122
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4215,
+                "restricted_wait_mean": 1240.32,
+                "restricted_wait_total": 248064,
+                "completed_wait_mean": 1297.0551181102362,
+                "completed_wait_n": 127
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -151.53500000000008,
+            "waiting": -5,
+            "completed": 5,
+            "busy_server_minutes": 231
+          }
+        }
+      ],
+      "warnings": [
+        "Synthetic scenarios only; no hospital calibration or individual decisions.",
+        "Finite-horizon restricted waiting exposure is censored, not ultimate mean wait.",
+        "Completed-only means have different completed cohorts and must not hide the backlog.",
+        "Service durations are known in advance for window-fit decisions; real uncertainty is absent.",
+        "Equal resource minutes do not establish clinically interchangeable or compliant staff rosters.",
+        "Bootstrap intervals describe Monte Carlo uncertainty within this scenario, not real-world predictions.",
+        "No staffing, funding, triage, treatment or government deployment recommendation is provided."
+      ],
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+        "package_version": "0.1.0"
+      },
+      "method": {
+        "bootstrap": "1000 resamples of paired replication differences, percentile interval with linear interpolation",
+        "assumptions": "Independent generated workload seeds; fixed scenario and policies; no real-world uncertainty model",
+        "capacity": "480 minutes per resource per day; same jobs and budget within every pair",
+        "primary_metric": "restricted_wait_mean across all arrivals; lower is less observed queue exposure"
+      }
+    },
+    {
+      "schema_version": 1,
+      "synthetic": true,
+      "completed": true,
+      "created_at": "2026-10-30T19:12:05.325519+00:00",
+      "configuration": {
+        "scenario": "late_burst",
+        "master_seed": 42,
+        "days": 5,
+        "requests_per_replication": 200,
+        "servers": 2,
+        "replications": 20
+      },
+      "policy_order": [
+        "early_capacity",
+        "late_capacity"
+      ],
+      "difference_direction": "late_capacity minus early_capacity",
+      "workload_sha256": "a4d5fb80e87404aeed7df408e750a50426e22f6d8aaf7940cdc031df737cf5f8",
+      "summaries": {
+        "restricted_wait_mean": {
+          "pairs": 20,
+          "mean_difference": -343.393,
+          "replication_difference_sd": 61.522220619870346,
+          "bootstrap_95_percentile": [
+            -369.41664999999995,
+            -318.732475
+          ],
+          "bootstrap_draws": 1000
+        },
+        "waiting": {
+          "pairs": 20,
+          "mean_difference": -12.2,
+          "replication_difference_sd": 4.187701291312831,
+          "bootstrap_95_percentile": [
+            -13.90125,
+            -10.5
+          ],
+          "bootstrap_draws": 1000
+        },
+        "completed": {
+          "pairs": 20,
+          "mean_difference": 12.2,
+          "replication_difference_sd": 4.187701291312831,
+          "bootstrap_95_percentile": [
+            10.5,
+            13.90125
+          ],
+          "bootstrap_draws": 1000
+        },
+        "busy_server_minutes": {
+          "pairs": 20,
+          "mean_difference": 419.95,
+          "replication_difference_sd": 110.71084908563911,
+          "bootstrap_95_percentile": [
+            374.4425,
+            468.1175
+          ],
+          "bootstrap_draws": 1000
+        }
+      },
+      "pairs": [
+        {
+          "seed": 2746317213,
+          "cohort_sha256": "d9b77be677fcda0c9cdfeec4da67342a67c43582863a3c101480be4d24cb0e4b",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 106,
+                "in_service": 0,
+                "waiting": 94,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3631,
+                "restricted_wait_mean": 2049.845,
+                "restricted_wait_total": 409969,
+                "completed_wait_mean": 2353.688679245283,
+                "completed_wait_n": 106
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 120,
+                "in_service": 0,
+                "waiting": 80,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4115,
+                "restricted_wait_mean": 1688.24,
+                "restricted_wait_total": 337648,
+                "completed_wait_mean": 1856.325,
+                "completed_wait_n": 120
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -361.6049999999998,
+            "waiting": -14,
+            "completed": 14,
+            "busy_server_minutes": 484
+          }
+        },
+        {
+          "seed": 1181241943,
+          "cohort_sha256": "a1347bead7b91404d1890bf45ea1f5737cbc5f99994115fc5fe868ee5872b137",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 117,
+                "in_service": 0,
+                "waiting": 83,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3814,
+                "restricted_wait_mean": 1407.75,
+                "restricted_wait_total": 281550,
+                "completed_wait_mean": 1587.5982905982905,
+                "completed_wait_n": 117
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 122,
+                "in_service": 0,
+                "waiting": 78,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3983,
+                "restricted_wait_mean": 1207.945,
+                "restricted_wait_total": 241589,
+                "completed_wait_mean": 1277.7622950819673,
+                "completed_wait_n": 122
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -199.80500000000006,
+            "waiting": -5,
+            "completed": 5,
+            "busy_server_minutes": 169
+          }
+        },
+        {
+          "seed": 958682846,
+          "cohort_sha256": "c4d72d5d924ff1d75d3789ac5d0441f67d69078c10a0d2421a2943c9a7fe8c4f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 121,
+                "in_service": 0,
+                "waiting": 79,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3736,
+                "restricted_wait_mean": 1649.565,
+                "restricted_wait_total": 329913,
+                "completed_wait_mean": 1733.5454545454545,
+                "completed_wait_n": 121
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4185,
+                "restricted_wait_mean": 1265.245,
+                "restricted_wait_total": 253049,
+                "completed_wait_mean": 1267.827067669173,
+                "completed_wait_n": 133
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -384.32000000000016,
+            "waiting": -12,
+            "completed": 12,
+            "busy_server_minutes": 449
+          }
+        },
+        {
+          "seed": 3163119785,
+          "cohort_sha256": "b874e51a431c76bf312e0097c353477d1e7ad14f35c7a0c31de7463608bd6b48",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 124,
+                "in_service": 0,
+                "waiting": 76,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3833,
+                "restricted_wait_mean": 1572.61,
+                "restricted_wait_total": 314522,
+                "completed_wait_mean": 1783.8064516129032,
+                "completed_wait_n": 124
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4198,
+                "restricted_wait_mean": 1196.955,
+                "restricted_wait_total": 239391,
+                "completed_wait_mean": 1233.593984962406,
+                "completed_wait_n": 133
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -375.655,
+            "waiting": -9,
+            "completed": 9,
+            "busy_server_minutes": 365
+          }
+        },
+        {
+          "seed": 1812140441,
+          "cohort_sha256": "f011c4bd1c83aefb67706abe05cc97823fd37fed8c9167f411c7163a593730dc",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 117,
+                "in_service": 0,
+                "waiting": 83,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3817,
+                "restricted_wait_mean": 1601.835,
+                "restricted_wait_total": 320367,
+                "completed_wait_mean": 1806.982905982906,
+                "completed_wait_n": 117
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4235,
+                "restricted_wait_mean": 1223.305,
+                "restricted_wait_total": 244661,
+                "completed_wait_mean": 1339.3007518796992,
+                "completed_wait_n": 133
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -378.53,
+            "waiting": -16,
+            "completed": 16,
+            "busy_server_minutes": 418
+          }
+        },
+        {
+          "seed": 127978094,
+          "cohort_sha256": "6351ea8be46bab4fd2c5c4344912c24281fe0cf03c4ed3867a12cfae393433be",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 118,
+                "in_service": 0,
+                "waiting": 82,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3755,
+                "restricted_wait_mean": 1607.86,
+                "restricted_wait_total": 321572,
+                "completed_wait_mean": 1783.7881355932204,
+                "completed_wait_n": 118
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 128,
+                "in_service": 0,
+                "waiting": 72,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4132,
+                "restricted_wait_mean": 1268.71,
+                "restricted_wait_total": 253742,
+                "completed_wait_mean": 1361.5,
+                "completed_wait_n": 128
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -339.14999999999986,
+            "waiting": -10,
+            "completed": 10,
+            "busy_server_minutes": 377
+          }
+        },
+        {
+          "seed": 939042955,
+          "cohort_sha256": "ab2d157b1ec015f8444b79b7b588f4ade297b4dc580383d0b8b4f1c158154f75",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 120,
+                "in_service": 0,
+                "waiting": 80,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3738,
+                "restricted_wait_mean": 1297.945,
+                "restricted_wait_total": 259589,
+                "completed_wait_mean": 1406.8916666666667,
+                "completed_wait_n": 120
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 132,
+                "in_service": 0,
+                "waiting": 68,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4196,
+                "restricted_wait_mean": 996.5,
+                "restricted_wait_total": 199300,
+                "completed_wait_mean": 1001.6969696969697,
+                "completed_wait_n": 132
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -301.44499999999994,
+            "waiting": -12,
+            "completed": 12,
+            "busy_server_minutes": 458
+          }
+        },
+        {
+          "seed": 2340505846,
+          "cohort_sha256": "a8b5ac69c5624b6406862ed95583eb73901f54cb1551999eab6735ea77ba2254",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 123,
+                "in_service": 0,
+                "waiting": 77,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3745,
+                "restricted_wait_mean": 1574.59,
+                "restricted_wait_total": 314918,
+                "completed_wait_mean": 1750.2845528455284,
+                "completed_wait_n": 123
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 131,
+                "in_service": 0,
+                "waiting": 69,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4099,
+                "restricted_wait_mean": 1286.925,
+                "restricted_wait_total": 257385,
+                "completed_wait_mean": 1361.8167938931297,
+                "completed_wait_n": 131
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -287.66499999999996,
+            "waiting": -8,
+            "completed": 8,
+            "busy_server_minutes": 354
+          }
+        },
+        {
+          "seed": 946785248,
+          "cohort_sha256": "55df34a5b1b9c1393efb5e2ddb7da65683c671408e3afc297949f8ed6b282f0f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 109,
+                "in_service": 0,
+                "waiting": 91,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3699,
+                "restricted_wait_mean": 1508.88,
+                "restricted_wait_total": 301776,
+                "completed_wait_mean": 1617.5229357798164,
+                "completed_wait_n": 109
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 122,
+                "in_service": 0,
+                "waiting": 78,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4124,
+                "restricted_wait_mean": 1158.545,
+                "restricted_wait_total": 231709,
+                "completed_wait_mean": 1102.7459016393443,
+                "completed_wait_n": 122
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -350.33500000000004,
+            "waiting": -13,
+            "completed": 13,
+            "busy_server_minutes": 425
+          }
+        },
+        {
+          "seed": 2530876844,
+          "cohort_sha256": "49ef85f63ba37c603ecab0741cd227bea17e225241e08b4e03c3fa2151e54175",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 120,
+                "in_service": 0,
+                "waiting": 80,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3676,
+                "restricted_wait_mean": 1539.06,
+                "restricted_wait_total": 307812,
+                "completed_wait_mean": 1764.9916666666666,
+                "completed_wait_n": 120
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 140,
+                "in_service": 0,
+                "waiting": 60,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4302,
+                "restricted_wait_mean": 1100.655,
+                "restricted_wait_total": 220131,
+                "completed_wait_mean": 1166.4,
+                "completed_wait_n": 140
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -438.405,
+            "waiting": -20,
+            "completed": 20,
+            "busy_server_minutes": 626
+          }
+        },
+        {
+          "seed": 3460967357,
+          "cohort_sha256": "89b6505dc6c967fe2902e7469e7dde3752c36b3a0e977d3cc8b3084c2d4a45df",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 110,
+                "in_service": 0,
+                "waiting": 90,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3736,
+                "restricted_wait_mean": 1577.255,
+                "restricted_wait_total": 315451,
+                "completed_wait_mean": 1791.8363636363636,
+                "completed_wait_n": 110
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4196,
+                "restricted_wait_mean": 1208.135,
+                "restricted_wait_total": 241627,
+                "completed_wait_mean": 1292.1338582677165,
+                "completed_wait_n": 127
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -369.1200000000001,
+            "waiting": -17,
+            "completed": 17,
+            "busy_server_minutes": 460
+          }
+        },
+        {
+          "seed": 2998485882,
+          "cohort_sha256": "27ad7d9149a13449618a90664bb489289c278f085acc662a71e8994afbd64402",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 120,
+                "in_service": 0,
+                "waiting": 80,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3760,
+                "restricted_wait_mean": 1444.11,
+                "restricted_wait_total": 288822,
+                "completed_wait_mean": 1674.7916666666667,
+                "completed_wait_n": 120
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 127,
+                "in_service": 0,
+                "waiting": 73,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4011,
+                "restricted_wait_mean": 1183.01,
+                "restricted_wait_total": 236602,
+                "completed_wait_mean": 1291.1181102362204,
+                "completed_wait_n": 127
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -261.0999999999999,
+            "waiting": -7,
+            "completed": 7,
+            "busy_server_minutes": 251
+          }
+        },
+        {
+          "seed": 1461364854,
+          "cohort_sha256": "cc9b6f58cb9f2654325787c91768dfa780baed0df307db3f90e7b59b50f3b1ef",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 119,
+                "in_service": 0,
+                "waiting": 81,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3725,
+                "restricted_wait_mean": 1414.87,
+                "restricted_wait_total": 282974,
+                "completed_wait_mean": 1668.8487394957983,
+                "completed_wait_n": 119
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 126,
+                "in_service": 0,
+                "waiting": 74,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4042,
+                "restricted_wait_mean": 1107.455,
+                "restricted_wait_total": 221491,
+                "completed_wait_mean": 1235.095238095238,
+                "completed_wait_n": 126
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -307.41499999999996,
+            "waiting": -7,
+            "completed": 7,
+            "busy_server_minutes": 317
+          }
+        },
+        {
+          "seed": 667779376,
+          "cohort_sha256": "d6ff3537063ca91bee6a8e3bb5dfde5d9ac0f92b4a7936e5a175bca6741e8df3",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 116,
+                "in_service": 0,
+                "waiting": 84,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3775,
+                "restricted_wait_mean": 1462.27,
+                "restricted_wait_total": 292454,
+                "completed_wait_mean": 1643.0344827586207,
+                "completed_wait_n": 116
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 125,
+                "in_service": 0,
+                "waiting": 75,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4082,
+                "restricted_wait_mean": 1187.37,
+                "restricted_wait_total": 237474,
+                "completed_wait_mean": 1247.408,
+                "completed_wait_n": 125
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -274.9000000000001,
+            "waiting": -9,
+            "completed": 9,
+            "busy_server_minutes": 307
+          }
+        },
+        {
+          "seed": 1445662585,
+          "cohort_sha256": "091e60dc7ab6c11d4613e9d14122c68b8c795d2a7fc384b7eedabc1a69143aa2",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 123,
+                "in_service": 0,
+                "waiting": 77,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3798,
+                "restricted_wait_mean": 1377.655,
+                "restricted_wait_total": 275531,
+                "completed_wait_mean": 1603.8455284552845,
+                "completed_wait_n": 123
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 133,
+                "in_service": 0,
+                "waiting": 67,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4209,
+                "restricted_wait_mean": 1050.995,
+                "restricted_wait_total": 210199,
+                "completed_wait_mean": 1137.0375939849623,
+                "completed_wait_n": 133
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -326.6600000000001,
+            "waiting": -10,
+            "completed": 10,
+            "busy_server_minutes": 411
+          }
+        },
+        {
+          "seed": 398340369,
+          "cohort_sha256": "5056f7b31d78596ea77abb67e565d623fcf48452a78ac25b21c1ff34add2ee95",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 112,
+                "in_service": 0,
+                "waiting": 88,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3610,
+                "restricted_wait_mean": 1452.44,
+                "restricted_wait_total": 290488,
+                "completed_wait_mean": 1705.419642857143,
+                "completed_wait_n": 112
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 129,
+                "in_service": 0,
+                "waiting": 71,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4164,
+                "restricted_wait_mean": 1010.25,
+                "restricted_wait_total": 202050,
+                "completed_wait_mean": 1071.6124031007753,
+                "completed_wait_n": 129
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -442.19000000000005,
+            "waiting": -17,
+            "completed": 17,
+            "busy_server_minutes": 554
+          }
+        },
+        {
+          "seed": 415393687,
+          "cohort_sha256": "6f384fef9f74db0ada3265cdececf28f285fea312dcb5826b8d5070d22bc6d7f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 114,
+                "in_service": 0,
+                "waiting": 86,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3637,
+                "restricted_wait_mean": 1746.82,
+                "restricted_wait_total": 349364,
+                "completed_wait_mean": 1898.2105263157894,
+                "completed_wait_n": 114
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 132,
+                "in_service": 0,
+                "waiting": 68,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4119,
+                "restricted_wait_mean": 1356.115,
+                "restricted_wait_total": 271223,
+                "completed_wait_mean": 1444.969696969697,
+                "completed_wait_n": 132
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -390.7049999999999,
+            "waiting": -18,
+            "completed": 18,
+            "busy_server_minutes": 482
+          }
+        },
+        {
+          "seed": 3639960595,
+          "cohort_sha256": "b1aa717b5f43465f7571225305e6cf49e67baaf92130e63f4463ab0dd4ccb48d",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 116,
+                "in_service": 0,
+                "waiting": 84,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3679,
+                "restricted_wait_mean": 1732.08,
+                "restricted_wait_total": 346416,
+                "completed_wait_mean": 1961.844827586207,
+                "completed_wait_n": 116
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 131,
+                "in_service": 0,
+                "waiting": 69,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4215,
+                "restricted_wait_mean": 1348.545,
+                "restricted_wait_total": 269709,
+                "completed_wait_mean": 1506.0076335877864,
+                "completed_wait_n": 131
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -383.53499999999985,
+            "waiting": -15,
+            "completed": 15,
+            "busy_server_minutes": 536
+          }
+        },
+        {
+          "seed": 2592983555,
+          "cohort_sha256": "112e49a4548944b4b187f6d9d67aec9ed5d875a9dad08597f1b9f5266e6d1000",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 105,
+                "in_service": 0,
+                "waiting": 95,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3581,
+                "restricted_wait_mean": 1800.67,
+                "restricted_wait_total": 360134,
+                "completed_wait_mean": 2123.8,
+                "completed_wait_n": 105
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 120,
+                "in_service": 0,
+                "waiting": 80,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4149,
+                "restricted_wait_mean": 1399.58,
+                "restricted_wait_total": 279916,
+                "completed_wait_mean": 1592.9916666666666,
+                "completed_wait_n": 120
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -401.09000000000015,
+            "waiting": -15,
+            "completed": 15,
+            "busy_server_minutes": 568
+          }
+        },
+        {
+          "seed": 3466589567,
+          "cohort_sha256": "c65713199793bb26334f4635b2890dea532c292dc0585b41e629c9d142e7ab7d",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 115,
+                "in_service": 0,
+                "waiting": 85,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3723,
+                "restricted_wait_mean": 1475.74,
+                "restricted_wait_total": 295148,
+                "completed_wait_mean": 1692.0869565217392,
+                "completed_wait_n": 115
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 125,
+                "in_service": 0,
+                "waiting": 75,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4111,
+                "restricted_wait_mean": 1181.51,
+                "restricted_wait_total": 236302,
+                "completed_wait_mean": 1282.624,
+                "completed_wait_n": 125
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": -294.23,
+            "waiting": -10,
+            "completed": 10,
+            "busy_server_minutes": 388
+          }
+        }
+      ],
+      "warnings": [
+        "Synthetic scenarios only; no hospital calibration or individual decisions.",
+        "Finite-horizon restricted waiting exposure is censored, not ultimate mean wait.",
+        "Completed-only means have different completed cohorts and must not hide the backlog.",
+        "Service durations are known in advance for window-fit decisions; real uncertainty is absent.",
+        "Equal resource minutes do not establish clinically interchangeable or compliant staff rosters.",
+        "Bootstrap intervals describe Monte Carlo uncertainty within this scenario, not real-world predictions.",
+        "No staffing, funding, triage, treatment or government deployment recommendation is provided."
+      ],
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+        "package_version": "0.1.0"
+      },
+      "method": {
+        "bootstrap": "1000 resamples of paired replication differences, percentile interval with linear interpolation",
+        "assumptions": "Independent generated workload seeds; fixed scenario and policies; no real-world uncertainty model",
+        "capacity": "480 minutes per resource per day; same jobs and budget within every pair",
+        "primary_metric": "restricted_wait_mean across all arrivals; lower is less observed queue exposure"
+      }
+    },
+    {
+      "schema_version": 1,
+      "synthetic": true,
+      "completed": true,
+      "created_at": "2026-10-30T19:12:05.378847+00:00",
+      "configuration": {
+        "scenario": "overload",
+        "master_seed": 42,
+        "days": 5,
+        "requests_per_replication": 200,
+        "servers": 2,
+        "replications": 20
+      },
+      "policy_order": [
+        "early_capacity",
+        "late_capacity"
+      ],
+      "difference_direction": "late_capacity minus early_capacity",
+      "workload_sha256": "698ea1b2abde2fa6ddd6284a970fd7bea9a43362a9100a2013b9052bfe0f4616",
+      "summaries": {
+        "restricted_wait_mean": {
+          "pairs": 20,
+          "mean_difference": 55.93400000000001,
+          "replication_difference_sd": 27.370718583725107,
+          "bootstrap_95_percentile": [
+            43.839056249999956,
+            66.93703125
+          ],
+          "bootstrap_draws": 1000
+        },
+        "waiting": {
+          "pairs": 20,
+          "mean_difference": 0.8,
+          "replication_difference_sd": 1.1964860832322377,
+          "bootstrap_95_percentile": [
+            0.3,
+            1.25
+          ],
+          "bootstrap_draws": 1000
+        },
+        "completed": {
+          "pairs": 20,
+          "mean_difference": -0.8,
+          "replication_difference_sd": 1.1964860832322377,
+          "bootstrap_95_percentile": [
+            -1.25,
+            -0.3
+          ],
+          "bootstrap_draws": 1000
+        },
+        "busy_server_minutes": {
+          "pairs": 20,
+          "mean_difference": -83.55,
+          "replication_difference_sd": 111.57413159915367,
+          "bootstrap_95_percentile": [
+            -125.5125,
+            -36.495000000000005
+          ],
+          "bootstrap_draws": 1000
+        }
+      },
+      "pairs": [
+        {
+          "seed": 2746317213,
+          "cohort_sha256": "ed6e1bbc80f8ec54c51062fa76a33d20a852ba8975c2a1a59a7c4567f08fb8fb",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3959,
+                "restricted_wait_mean": 2864.4,
+                "restricted_wait_total": 572880,
+                "completed_wait_mean": 2805.431818181818,
+                "completed_wait_n": 44
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3849,
+                "restricted_wait_mean": 2923.185,
+                "restricted_wait_total": 584637,
+                "completed_wait_mean": 3001.4651162790697,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 58.784999999999854,
+            "waiting": 1,
+            "completed": -1,
+            "busy_server_minutes": -110
+          }
+        },
+        {
+          "seed": 1181241943,
+          "cohort_sha256": "103319d3944b34d5baf54d9f05eae9614dd7c31201f38d91f5b9f0185fae554f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 42,
+                "in_service": 0,
+                "waiting": 158,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3827,
+                "restricted_wait_mean": 2515.865,
+                "restricted_wait_total": 503173,
+                "completed_wait_mean": 2290.8571428571427,
+                "completed_wait_n": 42
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 42,
+                "in_service": 0,
+                "waiting": 158,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3827,
+                "restricted_wait_mean": 2546.725,
+                "restricted_wait_total": 509345,
+                "completed_wait_mean": 2437.809523809524,
+                "completed_wait_n": 42
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 30.860000000000127,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 958682846,
+          "cohort_sha256": "03d2bc2f13a9150bb811797dea57be549324a68813ef0e01d1160056966d9da7",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3995,
+                "restricted_wait_mean": 2829.59,
+                "restricted_wait_total": 565918,
+                "completed_wait_mean": 2695.8888888888887,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3995,
+                "restricted_wait_mean": 2879.515,
+                "restricted_wait_total": 575903,
+                "completed_wait_mean": 2917.777777777778,
+                "completed_wait_n": 45
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 49.92499999999973,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 3163119785,
+          "cohort_sha256": "61b5ee5512d3adaa2077d4c2f6e8a67e0813f00fcdc0e588aa8f9708d6173796",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 48,
+                "in_service": 0,
+                "waiting": 152,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4122,
+                "restricted_wait_mean": 2632.755,
+                "restricted_wait_total": 526551,
+                "completed_wait_mean": 2536.5416666666665,
+                "completed_wait_n": 48
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 48,
+                "in_service": 0,
+                "waiting": 152,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4122,
+                "restricted_wait_mean": 2670.695,
+                "restricted_wait_total": 534139,
+                "completed_wait_mean": 2694.625,
+                "completed_wait_n": 48
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 37.940000000000055,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 1812140441,
+          "cohort_sha256": "67ea825292f7022743aa832c94a2746e77325be8cca519ae9183b7b0a6648543",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3971,
+                "restricted_wait_mean": 2737.19,
+                "restricted_wait_total": 547438,
+                "completed_wait_mean": 2732.3333333333335,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3868,
+                "restricted_wait_mean": 2763.845,
+                "restricted_wait_total": 552769,
+                "completed_wait_mean": 2796.7954545454545,
+                "completed_wait_n": 44
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 26.654999999999745,
+            "waiting": 1,
+            "completed": -1,
+            "busy_server_minutes": -103
+          }
+        },
+        {
+          "seed": 127978094,
+          "cohort_sha256": "d39472853f01cb4fac1b8b2269775ec2f3c1301de0d738db670135ff49a61a87",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 42,
+                "in_service": 0,
+                "waiting": 158,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3799,
+                "restricted_wait_mean": 2935.865,
+                "restricted_wait_total": 587173,
+                "completed_wait_mean": 2859.1428571428573,
+                "completed_wait_n": 42
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3867,
+                "restricted_wait_mean": 2965.495,
+                "restricted_wait_total": 593099,
+                "completed_wait_mean": 3073.4186046511627,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 29.63000000000011,
+            "waiting": -1,
+            "completed": 1,
+            "busy_server_minutes": 68
+          }
+        },
+        {
+          "seed": 939042955,
+          "cohort_sha256": "8b1ee6056a6f8daa9bc21f067c68b0b5e9548ea4640046a27d120ef014b45811",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3930,
+                "restricted_wait_mean": 2569.66,
+                "restricted_wait_total": 513932,
+                "completed_wait_mean": 2565.3863636363635,
+                "completed_wait_n": 44
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3930,
+                "restricted_wait_mean": 2608.075,
+                "restricted_wait_total": 521615,
+                "completed_wait_mean": 2740.0,
+                "completed_wait_n": 44
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 38.414999999999964,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 2340505846,
+          "cohort_sha256": "7c8fbea10321a148f8994b5381be0b9f6022df394e4faf2d5ab7c38cfa231bca",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4023,
+                "restricted_wait_mean": 2745.16,
+                "restricted_wait_total": 549032,
+                "completed_wait_mean": 2556.0666666666666,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3830,
+                "restricted_wait_mean": 2834.61,
+                "restricted_wait_total": 566922,
+                "completed_wait_mean": 2856.767441860465,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 89.45000000000027,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -193
+          }
+        },
+        {
+          "seed": 946785248,
+          "cohort_sha256": "3ccc0f2075ae67770eef75e223f75a54c515c6738afb7a98c001c0ee3e63a708",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3947,
+                "restricted_wait_mean": 2656.69,
+                "restricted_wait_total": 531338,
+                "completed_wait_mean": 2635.177777777778,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3767,
+                "restricted_wait_mean": 2721.19,
+                "restricted_wait_total": 544238,
+                "completed_wait_mean": 2818.6279069767443,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 64.5,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -180
+          }
+        },
+        {
+          "seed": 2530876844,
+          "cohort_sha256": "408e84e6f5f105f7b8216a17b60c5a8feaff1ad0aae18b62e124aeb3b9182c7e",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3873,
+                "restricted_wait_mean": 2794.06,
+                "restricted_wait_total": 558812,
+                "completed_wait_mean": 2791.6279069767443,
+                "completed_wait_n": 43
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4027,
+                "restricted_wait_mean": 2804.275,
+                "restricted_wait_total": 560855,
+                "completed_wait_mean": 2980.8444444444444,
+                "completed_wait_n": 45
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 10.215000000000146,
+            "waiting": -2,
+            "completed": 2,
+            "busy_server_minutes": 154
+          }
+        },
+        {
+          "seed": 3460967357,
+          "cohort_sha256": "2a811cfcf57845810caf9d64d181ef1e263ea255eaa2b77c1ec1141d7e849f8c",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4180,
+                "restricted_wait_mean": 2488.265,
+                "restricted_wait_total": 497653,
+                "completed_wait_mean": 2574.1136363636365,
+                "completed_wait_n": 44
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4071,
+                "restricted_wait_mean": 2520.975,
+                "restricted_wait_total": 504195,
+                "completed_wait_mean": 2666.953488372093,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 32.710000000000036,
+            "waiting": 1,
+            "completed": -1,
+            "busy_server_minutes": -109
+          }
+        },
+        {
+          "seed": 2998485882,
+          "cohort_sha256": "9241eae49960f54a8188d42c4d473153b0373cbbc5e2010a2196994552d639de",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3765,
+                "restricted_wait_mean": 2635.83,
+                "restricted_wait_total": 527166,
+                "completed_wait_mean": 2565.6046511627906,
+                "completed_wait_n": 43
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3765,
+                "restricted_wait_mean": 2690.56,
+                "restricted_wait_total": 538112,
+                "completed_wait_mean": 2820.1627906976746,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 54.73000000000002,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 1461364854,
+          "cohort_sha256": "09ad5e1f8a28d84fbd4461c400d7b44ea5d680836661ccb115c49017ae2ee900",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4123,
+                "restricted_wait_mean": 2683.79,
+                "restricted_wait_total": 536758,
+                "completed_wait_mean": 2507.1111111111113,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3912,
+                "restricted_wait_mean": 2782.195,
+                "restricted_wait_total": 556439,
+                "completed_wait_mean": 2839.8372093023254,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 98.4050000000002,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -211
+          }
+        },
+        {
+          "seed": 667779376,
+          "cohort_sha256": "81905b1b41e6dee140eff0dad8a0197958b6be92f36ba44c914f4272c13a5038",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3945,
+                "restricted_wait_mean": 2519.72,
+                "restricted_wait_total": 503944,
+                "completed_wait_mean": 2442.3863636363635,
+                "completed_wait_n": 44
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 42,
+                "in_service": 0,
+                "waiting": 158,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3724,
+                "restricted_wait_mean": 2578.28,
+                "restricted_wait_total": 515656,
+                "completed_wait_mean": 2595.7619047619046,
+                "completed_wait_n": 42
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 58.5600000000004,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -221
+          }
+        },
+        {
+          "seed": 1445662585,
+          "cohort_sha256": "e154851b464f3eecf58e43c65b44fd5820cad40053a14b46bbcf789fed435a0a",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4076,
+                "restricted_wait_mean": 2602.07,
+                "restricted_wait_total": 520414,
+                "completed_wait_mean": 2612.866666666667,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3886,
+                "restricted_wait_mean": 2690.87,
+                "restricted_wait_total": 538174,
+                "completed_wait_mean": 2885.186046511628,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 88.79999999999973,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -190
+          }
+        },
+        {
+          "seed": 398340369,
+          "cohort_sha256": "a523d17323ee3ceeffe8b01dd4944511771e795a7e2e4bb01e1acaded504db3d",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4152,
+                "restricted_wait_mean": 2596.41,
+                "restricted_wait_total": 519282,
+                "completed_wait_mean": 2616.6666666666665,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3941,
+                "restricted_wait_mean": 2678.735,
+                "restricted_wait_total": 535747,
+                "completed_wait_mean": 2880.6511627906975,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 82.32500000000027,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -211
+          }
+        },
+        {
+          "seed": 415393687,
+          "cohort_sha256": "0815f9ccb475443e7e65705c3944ee033688a3775670b9f0915ae274a0d2359f",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 46,
+                "in_service": 0,
+                "waiting": 154,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4098,
+                "restricted_wait_mean": 2799.51,
+                "restricted_wait_total": 559902,
+                "completed_wait_mean": 2586.782608695652,
+                "completed_wait_n": 46
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3954,
+                "restricted_wait_mean": 2898.06,
+                "restricted_wait_total": 579612,
+                "completed_wait_mean": 2917.2954545454545,
+                "completed_wait_n": 44
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 98.54999999999973,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -144
+          }
+        },
+        {
+          "seed": 3639960595,
+          "cohort_sha256": "d6cf55e1c0580bd59d398119b0cb3516d2869b576e2ed0cbf99e1be86c1a6fcf",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 44,
+                "in_service": 0,
+                "waiting": 156,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4032,
+                "restricted_wait_mean": 2692.915,
+                "restricted_wait_total": 538583,
+                "completed_wait_mean": 2555.1363636363635,
+                "completed_wait_n": 44
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 42,
+                "in_service": 0,
+                "waiting": 158,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3811,
+                "restricted_wait_mean": 2785.135,
+                "restricted_wait_total": 557027,
+                "completed_wait_mean": 2827.190476190476,
+                "completed_wait_n": 42
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 92.22000000000025,
+            "waiting": 2,
+            "completed": -2,
+            "busy_server_minutes": -221
+          }
+        },
+        {
+          "seed": 2592983555,
+          "cohort_sha256": "f6d3e3016542094685bec6dab1d25d3483abdeb741e0c27593fe8d27a4b1622d",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3965,
+                "restricted_wait_mean": 2828.325,
+                "restricted_wait_total": 565665,
+                "completed_wait_mean": 2783.953488372093,
+                "completed_wait_n": 43
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 43,
+                "in_service": 0,
+                "waiting": 157,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 3965,
+                "restricted_wait_mean": 2856.575,
+                "restricted_wait_total": 571315,
+                "completed_wait_mean": 2915.3488372093025,
+                "completed_wait_n": 43
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 28.25,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        },
+        {
+          "seed": 3466589567,
+          "cohort_sha256": "d3cfdae8def0db44289fe22de25508357f7374ef6f825f06f3cb8ae46d0bbfd8",
+          "policies": {
+            "early_capacity": {
+              "calendar_sha256": "97344a3d55ace60c950b88cb32b164dec6583e4958d1f30e63fa7060b058550a",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4066,
+                "restricted_wait_mean": 2666.55,
+                "restricted_wait_total": 533310,
+                "completed_wait_mean": 2532.777777777778,
+                "completed_wait_n": 45
+              }
+            },
+            "late_capacity": {
+              "calendar_sha256": "a1a9471d7c038aa44e1beec9cb9a2e11c8ef19cab377715dc245b43b57bb0ac4",
+              "metrics": {
+                "arrived": 200,
+                "completed": 45,
+                "in_service": 0,
+                "waiting": 155,
+                "available_server_minutes": 4800,
+                "busy_server_minutes": 4066,
+                "restricted_wait_mean": 2714.305,
+                "restricted_wait_total": 542861,
+                "completed_wait_mean": 2745.0222222222224,
+                "completed_wait_n": 45
+              }
+            }
+          },
+          "differences": {
+            "restricted_wait_mean": 47.754999999999654,
+            "waiting": 0,
+            "completed": 0,
+            "busy_server_minutes": 0
+          }
+        }
+      ],
+      "warnings": [
+        "Synthetic scenarios only; no hospital calibration or individual decisions.",
+        "Finite-horizon restricted waiting exposure is censored, not ultimate mean wait.",
+        "Completed-only means have different completed cohorts and must not hide the backlog.",
+        "Service durations are known in advance for window-fit decisions; real uncertainty is absent.",
+        "Equal resource minutes do not establish clinically interchangeable or compliant staff rosters.",
+        "Bootstrap intervals describe Monte Carlo uncertainty within this scenario, not real-world predictions.",
+        "No staffing, funding, triage, treatment or government deployment recommendation is provided."
+      ],
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+        "package_version": "0.1.0"
+      },
+      "method": {
+        "bootstrap": "1000 resamples of paired replication differences, percentile interval with linear interpolation",
+        "assumptions": "Independent generated workload seeds; fixed scenario and policies; no real-world uncertainty model",
+        "capacity": "480 minutes per resource per day; same jobs and budget within every pair",
+        "primary_metric": "restricted_wait_mean across all arrivals; lower is less observed queue exposure"
+      }
+    }
+  ]
+}

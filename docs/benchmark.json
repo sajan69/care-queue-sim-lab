@@ -1,0 +1,49 @@
+{
+  "completed": true,
+  "created_at": "2026-10-30T19:12:05.547254+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "package_version": "0.1.0"
+  },
+  "logical_cpus": 9,
+  "workload_sha256": "a4d5fb80e87404aeed7df408e750a50426e22f6d8aaf7940cdc031df737cf5f8",
+  "workload": {
+    "scenario": "late_burst",
+    "master_seed": 42,
+    "days": 5,
+    "requests": 200,
+    "servers": 2,
+    "replications": 20,
+    "policy_runs": 40,
+    "request_policy_visits": 8000,
+    "bootstrap_resamples_per_metric": 1000,
+    "metrics": 4
+  },
+  "samples": [
+    {
+      "repeat": 1,
+      "milliseconds": 55.372225999917646,
+      "restricted_wait_difference": -343.393
+    },
+    {
+      "repeat": 2,
+      "milliseconds": 55.286507999880996,
+      "restricted_wait_difference": -343.393
+    },
+    {
+      "repeat": 3,
+      "milliseconds": 56.187539999882574,
+      "restricted_wait_difference": -343.393
+    }
+  ],
+  "median_milliseconds": 55.372225999917646,
+  "method": {
+    "included": "generation, hashing, both event simulations, invariant checks, metrics and bootstrap summaries",
+    "excluded": "CLI/import time, serialization/file writes, browser and post-timer repeat consistency assertion",
+    "warmup": "no explicit warmup or cache clearing; preceding tests may affect timings",
+    "limits": "shared host, single client; no production capacity or performance-improvement baseline"
+  },
+  "source_commit": "d9f3bcc0e9a03233e3a7e58572fc701412ae12fa",
+  "execution": "Local installed wheel, not editable install"
+}

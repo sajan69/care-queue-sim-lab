@@ -1,6 +1,6 @@
 # Synthetic queue research boundary
 
-Assessment date: 31 October 2026. This is a scope-specific design assessment, not legal advice, research-ethics approval or a regulatory determination. The official governance sources below were last successfully checked on 30 October 2026 in the preceding Australian aggregate-research project. Retrieval on 31 October was unavailable: the search service failed, OAIC returned HTTP 403 and TGA returned HTTP 503. No access-control bypass was attempted. This document does not assert a newly verified policy version or operational compliance.
+Assessment date: 31 October 2026. This is a scope-specific design assessment, not legal advice, research-ethics approval or a regulatory determination. The governance sources below were last verified on 30 October 2026. Changes since that review could not be independently verified on 31 October. This assessment therefore does not certify the current policy text or operational compliance; any adopter must verify current requirements before use.
 
 ## Purpose and data
 

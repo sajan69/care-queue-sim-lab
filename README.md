@@ -40,3 +40,9 @@ Open the HTML locally: it needs no scripts, server or remote assets. Experiment 
 - [AIHW elective surgery statistics and interpretation](https://www.aihw.gov.au/hospitals/topics/elective-surgery)
 - [Productivity Commission: Public hospitals, Report on Government Services 2026](https://www.pc.gov.au/ongoing/report-on-government-services/health/public-hospitals/)
 - [Python heap queue algorithms](https://docs.python.org/3/library/heapq.html)
+
+## Architecture and verification
+
+The standard-library runtime generates requests, validates finite calendars, processes a stable-priority event heap, verifies conservation/area identities, then summarizes paired replications and serializes bounded local outputs. No database or network service is needed. The report keeps the unfinished queue visible alongside completed work.
+
+There are 19 distinct Python tests, including 40 small oracle comparisons. CI installs the built package on Python 3.11–3.13; Chromium checks the generated report at desktop/mobile widths and tests inert HTML payloads. [Security controls](docs/SECURITY.md) describe input limits, trusted local execution and exclusive output files.
