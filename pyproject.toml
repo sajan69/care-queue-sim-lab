@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==84.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "care-queue-sim-lab"
+version = "0.1.0"
+description = "Finite-horizon synthetic queue experiments with explicit unfinished work"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+care-queue = "care_queue.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

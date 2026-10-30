@@ -1,0 +1,32 @@
+name: Queue experiments
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: |
+          set -euo pipefail
+          python -m pip wheel --no-deps . --wheel-dir dist
+          python -m pip install --no-deps dist/*.whl
+          python -m pip check
+          python -m unittest discover -s tests -v
+          care-queue --version
+          mkdir artifacts
+          care-queue --scenario late_burst --seed 17 --days 5 --requests 200 --trace --out artifacts/queue.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: queue-${{ matrix.python }}
+          path: artifacts/
+          retention-days: 7
